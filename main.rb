@@ -49,5 +49,9 @@ def view_all_orders(orders)
         puts "#{order.id} | #{order.name} | Credit No: #{order.credit_no} | CVV: #{order.cvv}"
     end
 end
-view_all_orders(orders)
+# view_all_orders(orders)
+
+# Delete selected product
+inventory.delete_product("104")
+view_all_products(inventory)
 
