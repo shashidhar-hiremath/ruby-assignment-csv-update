@@ -52,6 +52,15 @@ class Inventory
     true
   end
 
+  def delete_product(id)
+    product = get_product_by_id(id)
+    return puts "Product with ID #{id} not found." unless product
+
+    @products.reject! { |p| p.id == id }
+    save
+    puts "Product with ID #{id} deleted successfully."
+  end
+
   def get_product_by_id(id)
     @products.find { |p| p.id == id }
   end
