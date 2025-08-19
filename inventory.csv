@@ -1,0 +1,6 @@
+id,name,price,quantity,manufacturer
+101,Tablet,500.0,90,Samsung
+102,Keypad,50.0,999,Logitech
+103,mouse,50.0,1000,Logitech
+104,Headphone,75.0,117,Sony
+105,Mobile,750.0,110,Motorola
